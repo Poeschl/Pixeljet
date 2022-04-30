@@ -4,6 +4,9 @@ on:
     tags:
       - "*.*.*"
 
+permissions:
+  packages: write
+
 jobs:
   build:
     name: Build Application
