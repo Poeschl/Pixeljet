@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  pixeljet:
+    restart: unless-stopped
+    image: ghcr.io/poeschl/pixeljet
+    network_mode: "host"
+    # Prints the text at x 10 and y 20
+    command: --host localhost -x 10 -y 20 Test
+
+
